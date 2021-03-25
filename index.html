@@ -11,6 +11,7 @@
     <link rel="stylesheet" type='text/css' href="js/header.js">
     <link rel="stylesheet" type='text/css' href="js/index.js">
     <link rel="stylesheet" type='text/css' href="css/font.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!-- <link rel="stylesheet" type='text/css' href="" -->
 
     <meta charset="utf-8">
@@ -55,7 +56,7 @@
                     <label for="psw-repeat"><b>Confirm Password</b></label><br>
                     <input type="password" placeholder="Confirm Password" id="again" name="psw-repeat" required><br><br>
 
-                    <input type="button" value="Sign Up" id="signup">
+                    <button type="submit" class="btn btn-success" id="b22">Sign Up</button>
                     
                     
                   </form>
@@ -76,7 +77,8 @@
                 </div>
         
                 <div class="modal-body">
-                  <form id="f2"> 
+                    <div class="container">
+                  <form id="f2" action="/action_page.php"> 
                     
 
                     <label for="username"><b>Username</b></label><br>
@@ -85,10 +87,12 @@
                     <label for="psw"><b>Password</b></label><br>
                     <input type="password" placeholder="Enter Password" id="pas" name="psw" required><br><br>
 
-                    <input type="button" value="Sign Up" id="signup">
+                    <!-- <input type="button" value="Sign Up" id="signup"> -->
+                    <button type="submit" class="btn btn-success" id="b22">Sign In</button>
                     
-                    
+                    <p id="not"><b>Not a member? <a data-toggle="modal" data-target="#b" id="link" data-dismiss="modal">    Sign Up</b></a></p>
                   </form>
+                </div>
                 </div>
                 
               </div>
@@ -102,7 +106,32 @@
 
     <div class="btn">
         <input type="button" value="All Posts" class="bt1">
-        <input type="button" value="Create Post" class="bt2">
+        <input type="button" value="Create Post" class="bt2" data-toggle="modal" data-target="#create">
+        <div class="modal" id="create">
+            <div class="modal-dialog">
+              <div class="modal-content">
+        
+                <div class="modal-header">
+                    <h2 class="modal-title" id="pen">Pen Your Post</h2>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <div class="modal-body">
+                    <div class="container">
+                  <form id="f3" action="/action_page.php"> 
+                    <label id="t">Title:</label><br>
+                    <input type="text" id="title"><br><br>
+                    <label id="c">Content:</label><br>
+                    <textarea id="content"></textarea>
+                    <button type="submit" class="btn btn-success" id="b222">Create</button>
+
+                  </form>
+                </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
 
     </div>
 </body>

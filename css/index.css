@@ -34,8 +34,45 @@ body{
 	width: 100%;
 	background-color: #eeeeee;
 	border:0em;
+	height:40px;
 }
 
 #m1, #m2{
 	text-align: center;
+}
+
+#b22{
+	/* align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 100vh; */
+	margin-left: 1%;
+	margin-top: 4%;
+	width: 70vh;
+	margin-bottom: 6%;
+}
+
+#not{
+	margin-left: 110px;
+}
+#link{
+	cursor:pointer;
+	color: blue;
+	align-items: center;
+}
+#t, #c{
+	/* margin-left: 10px; */
+	margin-right: 100%;
+}
+#title{
+	width: 50%;
+	margin-right: 60%;
+}
+#b222{
+	margin-right: 50%;
+}
+
+#content{
+	width:100%;
+	height: 300px;
 }
