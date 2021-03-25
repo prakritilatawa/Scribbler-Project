@@ -2,3 +2,40 @@ body{
 	background-image: url(../images/background.jpg);
 	background-size: 100%;
 }
+.bt1, .bt2{
+	color: black;
+	background: #ffc40c;
+	text-align: center;
+	padding: 5px;
+	/* margin-top: 50px;
+	margin-left: 50%;
+	margin-bottom: 50px; */
+	cursor: pointer;
+}
+.btn{
+	margin: 15%;
+	margin-left: 45%;
+}
+
+#f1{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#signup{
+	width: 100%;
+	background-color: rgb(33, 172, 33);
+	text-align: center;
+	color: white;
+	height: 30%;
+}
+
+#pas, #fname, #username, #again{
+	width: 100%;
+	background-color: #eeeeee;
+	border:0em;
+}
+
+#m1, #m2{
+	text-align: center;
+}

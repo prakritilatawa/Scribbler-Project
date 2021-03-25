@@ -4,25 +4,106 @@
 <head>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <title>ScriBBler</title>
     <link rel="stylesheet" href="https://fonts.google.com/">
     <link rel="stylesheet" type='text/css' href="css/index.css" >
     <link rel="stylesheet" type='text/css' href="css/header.css">
     <link rel="stylesheet" type='text/css' href="js/header.js">
-    <link rel="stylesheet" type='text/css' href="js/header.js">
+    <link rel="stylesheet" type='text/css' href="js/index.js">
     <link rel="stylesheet" type='text/css' href="css/font.css">
+    <!-- <link rel="stylesheet" type='text/css' href="" -->
 
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <div class="header">
-        <input class="topButtons" type="button" value="Sign Up">
-        <input class="topButtons" type="button" value="Sign In">
+        <input class="topButtons" type="button" value="Sign Up" data-toggle="modal" data-target="#b">
+        <input class="topButtons" type="button" value="Sign In" data-toggle="modal" data-target="#b2" >
         <a id="pageTitle" class="logo-title">ScriBBler</a>
         <p class="middleText">Explore. Imagine. Create.</p>
-    </div> 
-    <div>
+
+        <div class="modal" id="b">
+            <div class="modal-dialog">
+              <div class="modal-content">
         
+                <div class="modal-header">
+                    <h2 class="modal-title" id="m1">Get Started</h2>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <div class="modal-body">
+                  <form id="f1"> 
+                    
+                    
+                    <label for="fname"><b>Full Name</b></label><br>
+                    <input type="text" placeholder="Enter Full Name" id="fname" name="fname" required><br><br>
+
+                    <label for="username"><b>Username</b></label><br>
+                    <input type="text" placeholder="Enter Username" id="username" name="username" required><br><br>
+              
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" id="pas" name="psw" required><br><br>
+              
+                    <label for="psw-repeat"><b>Confirm Password</b></label><br>
+                    <input type="password" placeholder="Confirm Password" id="again" name="psw-repeat" required><br><br>
+
+                    <input type="button" value="Sign Up" id="signup">
+                    
+                    
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+
+        <div class="modal" id="b2">
+            <div class="modal-dialog">
+              <div class="modal-content">
+        
+                <div class="modal-header">
+                    <h2 class="modal-title" id="m2">Welcome Back!</h2>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <div class="modal-body">
+                  <form id="f2"> 
+                    
+
+                    <label for="username"><b>Username</b></label><br>
+                    <input type="text" placeholder="Enter Username" id="username" name="username" required><br><br>
+              
+                    <label for="psw"><b>Password</b></label><br>
+                    <input type="password" placeholder="Enter Password" id="pas" name="psw" required><br><br>
+
+                    <input type="button" value="Sign Up" id="signup">
+                    
+                    
+                  </form>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+
+
+    </div> 
+
+    
+
+    <div class="btn">
+        <input type="button" value="All Posts" class="bt1">
+        <input type="button" value="Create Post" class="bt2">
+
     </div>
 </body>
 
