@@ -1,0 +1,162 @@
+.bt1, .bt2{
+	color: black;
+	background: #ffc40c;
+	text-align: center;
+	padding: 5px;
+	/* margin-top: 50px;
+	margin-left: 50%;
+	margin-bottom: 50px; */
+	cursor: pointer;
+}
+.btn{
+	margin: 15%;
+	margin-left: 45%;
+}
+
+#f1{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#signup{
+	width: 100%;
+	background-color: rgb(33, 172, 33);
+	text-align: center;
+	color: white;
+	height: 30%;
+}
+
+#pas, #fname, #username, #again{
+	width: 100%;
+	background-color: #eeeeee;
+	border:0em;
+	height:40px;
+}
+
+#m1, #m2{
+	text-align: center;
+}
+
+#b22{
+	/* align-items: center;
+	display: flex;
+	justify-content: center;
+	width: 100vh; */
+	margin-left: 1%;
+	margin-top: 4%;
+	width: 70vh;
+	margin-bottom: 6%;
+}
+
+#not{
+	margin-left: 110px;
+}
+#link{
+	cursor:pointer;
+	color: blue;
+	align-items: center;
+}
+#t, #c{
+	/* margin-left: 10px; */
+	margin-right: 100%;
+}
+#title{
+	width: 50%;
+	margin-right: 60%;
+}
+#b222{
+	margin-right: 50%;
+}
+
+#content{
+	width: 100%;
+	height: 300px;
+}
+
+
+
+.side-square-wrapper{
+    height: 150px;
+    width: 17%;
+    text-align: center;
+    background-color: white;
+    padding: 40px 4px;
+    font-size: 16px;
+    font-weight: bold;
+    color:gray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.custom-card-body{
+    height: 150px; 
+    background-color: #ebe0e0;
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px; 
+}
+
+.card-body-heading{
+   color:gray;
+   font-size: 20px;
+   font-weight: 500;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-bottom: 5px;
+
+   
+}
+
+.post-text{
+    overflow: hidden; 
+    white-space: normal; 
+    height: 4.8em;  
+    text-overflow: -o-ellipsis-lastline; 
+}
+
+.trash-button{
+    float: right;
+    padding-right: 10px;
+    size: 10px;
+    cursor: pointer;
+}
+
+.ellipsis{
+    margin-left: 370px;
+   color: grey;
+    cursor: pointer;
+    padding-right: 120px;
+     margin-bottom: 4px;  
+    cursor: pointer;
+
+ 
+  
+}
+.container{
+    padding-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card-new{
+    border-radius: 25px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    margin: 50px;
+    width: 500px;
+    transition: box-shadow .3s;
+    margin-right: 10px;
+
+  
+}
+
+.card-new:hover {
+    box-shadow: 0 0 5px 5px rgba(33,33,33,.2); 
+  }
+
