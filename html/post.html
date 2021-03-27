@@ -5,11 +5,11 @@
     <title>All Posts</title>
 
     <link rel="stylesheet" href="https://fonts.google.com/">
-    <link rel="stylesheet" type='text/css' href="css/index.css" >
-    <link rel="stylesheet" type='text/css' href="css/header.css">
-    <link rel="stylesheet" type='text/css' href="js/header.js">
-    <link rel="stylesheet" type='text/css' href="js/index.js">
-    <link rel="stylesheet" type='text/css' href="css/font.css">
+    <link rel="stylesheet" type='text/css' href="../css/index.css" >
+    <link rel="stylesheet" type='text/css' href="../css/header.css">
+    <link rel="stylesheet" type='text/css' href="../js/header.js">
+    <link rel="stylesheet" type='text/css' href="../js/index.js">
+    <link rel="stylesheet" type='text/css' href="../css/font.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <meta charset="utf-8">
@@ -100,6 +100,35 @@
 
 
     </div> 
+
+    <div class="post container">
+      <div class="heading-content" id="edit-heading" contenteditable="true"></div>
+      <div class="writer">
+          <div class="writer-name"></div>
+          <div>
+              <button id="edit-button" type="button" class="btn btn-danger" onclick="onEdit()">Edit<i
+                      class="fa fa-edit" style="padding-left: 5px;"></i></button>
+          </div>
+      </div>
+
+
+      <div class="post-content" id="edit-contenttext" contenteditable="true">
+      </div>
+
+      <button id="like-button" type="button" class="btn btn-danger" onclick="countLikes()"><i
+              class="fa fa-thumbs-up"></i><span id="likeButton">Like</span></button>
+      <div id="showCount">Be the first one to like this</div>
+
+      <textarea id="comment" rows="4" cols="135" placeholder="Leave a comment..." name="comment"></textarea>
+      <div><button id="comment-button" type="button" class="btn btn-danger"
+              onclick="addComment(comment)">Comment</button></div>
+      <div id="allCommentsHeading">All Comments</div>
+      <div class="comment-container">
+          <div id="comments">
+          </div>
+      </div>
+
+  </div>
 
     
 </body>

@@ -44,7 +44,7 @@
 	width: 100vh; */
 	margin-left: 1%;
 	margin-top: 4%;
-	width: 70vh;
+	width: 100%;
 	margin-bottom: 6%;
 }
 
@@ -65,7 +65,7 @@
 	margin-right: 60%;
 }
 #b222{
-	margin-right: 50%;
+	margin-right: 10%;
 }
 
 #content{
@@ -148,7 +148,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 30px;
-    margin: 50px;
+    margin: 46px;
     width: 500px;
     transition: box-shadow .3s;
     margin-right: 10px;
