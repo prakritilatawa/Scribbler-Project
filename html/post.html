@@ -5,9 +5,10 @@
     <title>All Posts</title>
 
     <link rel="stylesheet" href="https://fonts.google.com/">
-    <link rel="stylesheet" type='text/css' href="../css/index.css" >
+    <!-- <link rel="stylesheet" type='text/css' href="../css/index.css" > -->
+    <link rel="stylesheet" type='text/css' href="../css/post.css">
     <link rel="stylesheet" type='text/css' href="../css/header.css">
-    <link rel="stylesheet" type='text/css' href="../js/header.js">
+    <link rel="stylesheet" type='text/css' href="../js/post.js">
     <link rel="stylesheet" type='text/css' href="../js/index.js">
     <link rel="stylesheet" type='text/css' href="../css/font.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -24,82 +25,82 @@
 </head>
 
 <body>
-    <div class="header">
-        <input class="topButtons" type="button" value="Sign Up" data-toggle="modal" data-target="#b">
-        <input class="topButtons" type="button" value="Sign In" data-toggle="modal" data-target="#b2" >
-        <a id="pageTitle" class="logo-title">ScriBBler</a>
-        <p class="middleText">Explore. Imagine. Create.</p>
+  <div class="header">
+    <input class="topButtons" type="button" value="Sign Up" data-toggle="modal" data-target="#b">
+    <input class="topButtons" type="button" value="Sign In" data-toggle="modal" data-target="#b2" >
+    <a id="pageTitle" class="logo-title">ScriBBler</a>
+    <p class="middleText">Explore. Imagine. Create.</p>
 
-        <div class="modal" id="b">
-            <div class="modal-dialog">
-              <div class="modal-content">
-        
-                <div class="modal-header">
-                    <h2 class="modal-title" id="m1">Get Started</h2>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-        
-                <div class="modal-body">
-                  <form id="f1"> 
-                    
-                    
-                    <label for="fname"><b>Full Name</b></label><br>
-                    <input type="text" placeholder="Enter Full Name" id="fname" name="fname" required><br><br>
-
-                    <label for="username"><b>Username</b></label><br>
-                    <input type="text" placeholder="Enter Username" id="username" name="username" required><br><br>
-              
-                    <label for="psw"><b>Password</b></label><br>
-                    <input type="password" placeholder="Enter Password" id="pas" name="psw" required><br><br>
-              
-                    <label for="psw-repeat"><b>Confirm Password</b></label><br>
-                    <input type="password" placeholder="Confirm Password" id="again" name="psw-repeat" required><br><br>
-
-                    <button type="submit" class="btn btn-success" id="b22">Sign Up</button>
-                    
-                    
-                  </form>
-                </div>
-                
-              </div>
+    <div class="modal" id="b">
+        <div class="modal-dialog">
+          <div class="modal-content">
+    
+            <div class="modal-header">
+                <h2 class="modal-title" id="m1">Get Started</h2>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-        </div>
-
-
-        <div class="modal" id="b2">
-            <div class="modal-dialog">
-              <div class="modal-content">
-        
-                <div class="modal-header">
-                    <h2 class="modal-title" id="m2">Welcome Back!</h2>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-        
-                <div class="modal-body">
-                    <div class="container">
-                  <form id="f2" action="/action_page.php"> 
-                    
-
-                    <label for="username"><b>Username</b></label><br>
-                    <input type="text" placeholder="Enter Username" id="username" name="username" required><br><br>
-              
-                    <label for="psw"><b>Password</b></label><br>
-                    <input type="password" placeholder="Enter Password" id="pas" name="psw" required><br><br>
-
-                    <!-- <input type="button" value="Sign Up" id="signup"> -->
-                    <button type="submit" class="btn btn-success" id="b22">Sign In</button>
-                    
-                    <p id="not"><b>Not a member? <a data-toggle="modal" data-target="#b" id="link" data-dismiss="modal">    Sign Up</b></a></p>
-                  </form>
-                </div>
-                </div>
+    
+            <div class="modal-body">
+              <form id="f1"> 
                 
-              </div>
+                
+                <label for="fname"><b>Full Name</b></label><br>
+                <input type="text" placeholder="Enter Full Name" id="fname" name="fname" required><br><br>
+
+                <label for="username"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" id="username" name="username" required><br><br>
+          
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" id="pas" name="psw" required><br><br>
+          
+                <label for="psw-repeat"><b>Confirm Password</b></label><br>
+                <input type="password" placeholder="Confirm Password" id="again" name="psw-repeat" required><br><br>
+
+                <button type="submit" class="btn btn-success" id="b22">Sign Up</button>
+                
+                
+              </form>
             </div>
+            
+          </div>
         </div>
+    </div>
 
 
-    </div> 
+    <div class="modal" id="b2">
+        <div class="modal-dialog">
+          <div class="modal-content">
+    
+            <div class="modal-header">
+                <h2 class="modal-title" id="m2">Welcome Back!</h2>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+    
+            <div class="modal-body">
+                <div class="container">
+              <form id="f2" action="/action_page.php"> 
+                
+
+                <label for="username"><b>Username</b></label><br>
+                <input type="text" placeholder="Enter Username" id="username" name="username" required><br><br>
+          
+                <label for="psw"><b>Password</b></label><br>
+                <input type="password" placeholder="Enter Password" id="pas" name="psw" required><br><br>
+
+                <!-- <input type="button" value="Sign Up" id="signup"> -->
+                <button type="submit" class="btn btn-success" id="b22">Sign In</button>
+                
+                <p id="not"><b>Not a member? <a data-toggle="modal" data-target="#b" id="link" data-dismiss="modal">    Sign Up</b></a></p>
+              </form>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+
+
+</div>  
 
     <div class="post container">
       <div class="heading-content" id="edit-heading" contenteditable="true"></div>
@@ -129,6 +130,18 @@
       </div>
 
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  crossorigin="anonymous"></script>
+
+<script src=../js/post.js> </script>
 
     
 </body>

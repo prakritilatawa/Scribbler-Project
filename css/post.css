@@ -1,7 +1,3 @@
-body{
-	background-image: url(../images/background.jpg);
-	background-size: 100%;
-}
 .bt1, .bt2{
 	color: black;
 	background: #ffc40c;
@@ -48,9 +44,8 @@ body{
 	width: 100vh; */
 	margin-left: 1%;
 	margin-top: 4%;
-	width: 100%;
+	width: 70vh;
 	margin-bottom: 6%;
-	border-radius: 2px;
 }
 
 #not{
@@ -70,12 +65,13 @@ body{
 	margin-right: 60%;
 }
 #b222{
-	margin-right: 10%;
-	width: 50%;
-	border-radius: 2px;
+	margin-right: 50%;
 }
 
 #content{
 	width:100%;
-	height: 100%;
+	height: 300px;
+}
+body{
+    background-color: #eeeeee;
 }
